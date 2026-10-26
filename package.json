@@ -1,0 +1,17 @@
+{
+  "name": "trustnex",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "node tests/run-tests.js",
+    "build:qr": "esbuild node_modules/jsqr/dist/jsQR.js --bundle --format=iife --global-name=jsQR --minify --outfile=vendor/jsqr.js"
+  },
+  "keywords": [],
+  "author": "",
+  "private": true,
+  "description": "Offline-first, rule-based cybersecurity awareness website",
+  "devDependencies": {
+    "esbuild": "^0.28.2",
+    "jsqr": "^1.4.0",
+    "pngjs": "^7.0.0"
+  }
+}
